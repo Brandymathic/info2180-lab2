@@ -1,0 +1,129 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+    text-align: center;
+    background-color: #63B3ED; 
+    color: #FFFFFF; 
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font family as per instruction */
+}
+
+h3{
+    color: #48bb78;
+}
+
+h31{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+}
+
+a2 {
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font family as per instruction */
+    color: #48BB78;
+}
+
+da {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font family as per instruction */
+    color: #718096;
+}
+
+.image_of_me img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; 
+}
+
+
+.image_of_me {
+    margin-bottom: 20px;
+}
+
+
+
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+  
+
+
+
+#img1{
+    float: left;
+}
+
+#img2{
+    float: left;
+}
+
+
+
+hr{
+    width: 98%;
+}
+
+article{
+    width: 50%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* Sidebar and main content */
+    grid-template-rows: auto 1fr auto; /* Header, content, and footer */
+    grid-template-areas: 
+        "header header"
+        "main-content sidebar"
+        "footer footer";
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar a {
+    color: #4299E1;
+}
+
+.about-section {
+    background-color: #E2E8F0;
+    padding: 15px;
+}
+
+
+.main-content {
+    grid-area: main-content;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
